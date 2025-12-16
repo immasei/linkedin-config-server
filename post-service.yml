@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /posts
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/post_db
+    username: postgres
+    password: changeme
+
+  jpa:
+    hibernate:
+      ddl-auto: update
