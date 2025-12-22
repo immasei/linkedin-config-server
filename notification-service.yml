@@ -20,6 +20,10 @@ spring:
 
   kafka:
     bootstrap-servers: localhost:19092
+    template:
+      observation-enabled: true
+    listener:
+      observation-enabled: true
     consumer:
       group-id: ${spring.application.name}
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
