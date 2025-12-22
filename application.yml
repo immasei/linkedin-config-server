@@ -4,12 +4,6 @@ eureka:
     hostname: localhost
     prefer-ip-address: true
 
-# eureka config
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 # actuator config & zipkin config
 # https://www.appsdeveloperblog.com/micrometer-and-zipkin-in-spring-boot/
 management:
