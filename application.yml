@@ -14,11 +14,6 @@ management:
   tracing:
     sampling:
       probability: 1.0
-  observations:
-    http:
-      client:
-        requests:
-          ignore-patterns: /eureka/.*
   zipkin:
     tracing:
       endpoint: http://localhost:9411/api/v2/spans
